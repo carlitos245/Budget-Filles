@@ -1,0 +1,105 @@
+/* BLOC GLOBAL CENTRÉ */
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+  margin: 0;
+  background-image: url("fond de page.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #222;
+}
+
+.bloc-budget {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #E9DCC9;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* INPUTS LARGES */
+.input-large {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/*Ce bloc sert à définir les propriétés communes */
+.btn, .btn-reset1, .btnpdf {
+  height: 40px; /*hauteur identique pour les deux boutons*/
+  padding: 0 25px;/* espace interne horizontal */
+  font-size: 18px;/* taille du texte*/
+  border-radius: 6px;/* coins arrondis */
+  border: none;/* pas de bordure */
+  cursor: pointer;/* curseur "main" au survol */
+  margin-right: 10px;/* espace entre les boutons */
+  margin-top: 10px; /*espace au-dessus*/
+  margin-bottom: 10px; /*espace en dessous*/
+}
+
+/*Ce bloc sert à définir le style du bouton*/
+.btn {
+  background: #7f8c8d;/* couleur du bouton Ajouter*/
+  color: white;/* texte blanc */
+}
+.btn:hover {
+  background: #707b7c;   /* vert un peu plus foncé */
+}
+
+/*Ce bloc sert à définir le style du bouton*/
+.btn-reset1{
+  background: #7f8c8d; /* couleur du bouton*/
+  color: white;
+}
+.btn-reset1:hover{
+ background: #707b7c; 
+}
+
+/*Ce bloc sert à définir le style du bouton*/
+.btnpdf {
+  background: #7f8c8d; /* couleur du bouton*/
+  color: white;
+}
+.btnpdf:hover{
+ background: #707b7c; 
+}
+/* TABLEAU LARGE ET CENTRÉ */
+.table-container {
+  width: 100%;
+  overflow-x: auto;   /* permet le scroll horizontal */
+}
+
+.budget-table {
+  width: 100%;
+  min-width: 700px;   /* largeur minimale pour éviter l’écrasement */
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+/* EN-TÊTE ESPACÉ */
+.budget-table th {
+  background: #e9e9e9;
+  padding: 15px 25px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* CELLULES ESPACÉES */
+.budget-table td {
+  background: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+}

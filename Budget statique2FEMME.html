@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style5.css" />
+
+ <!-- 📦 Librairies externes -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+  <div class="bloc-budget">
+
+    <center><h2 id="solde-global">Solde actuel : 0</h2></center>
+
+    <!-- INPUTS -->
+    <input type="text" id="denomination" class="input-large" placeholder="Valeur, Dénomination..." />
+    <input type="number" id="credit" class="input-large" placeholder="Crédit..." />
+    <input type="number" id="debit" class="input-large" placeholder="Débit..." />
+    <input type="date" id="task-date" class="input-large" />
+
+    <!-- BOUTONS -->
+    <center>
+    <button id="add-task" class="btn">Ajouter</button>
+    <button id="budget-reset-btn1" class="btn-reset1">Réinitialiser données</button>
+    <button id="pdfBtn" class="btnpdf">Exporter PDF</button>
+    </center>
+    <br>
+
+   <!-- TABLEAU (DANS LE BLOC !) -->
+<div class="table-container">
+  <table class="budget-table">
+    <thead>
+      <tr>
+        <th>Dénomination</th>
+        <th>Crédit</th>
+        <th>Débit</th>
+        <th>Total</th>
+        <th>Date</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="task-list"></tbody>
+  </table>
+</div>
+
+
+  <script src="Budgetstatique2.js"></script>
+</body>
+</html>
