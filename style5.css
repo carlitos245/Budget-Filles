@@ -106,14 +106,15 @@
 
 .label-date {
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   color: #222;
-  margin-left: 20px; /* décale horizontalement */
+  margin-bottom: 6px; 
+  margin-left: 15px; 
 }
-
 .scroll-hint {
   text-align: center;
   font-size: 16px;
   color: #222;
   margin-bottom: 8px;
 }
+
