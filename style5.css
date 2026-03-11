@@ -103,3 +103,17 @@
   font-size: 16px;
   border-bottom: 1px solid #ddd;
 }
+
+.label-date {
+  font-weight: 700;
+  font-size: 17px;
+  color: #222;
+  margin-left: 20px; /* décale horizontalement */
+}
+
+.scroll-hint {
+  text-align: center;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 8px;
+}
